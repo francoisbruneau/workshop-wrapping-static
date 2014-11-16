@@ -18,6 +18,17 @@
 	margin-bottom: 30px;
 }
 
+p {
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 300;
+	font-style: italic;
+}
+
+h1, h2, label, input, .btn-primary {
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 500;
+	font-style: normal;
+}
 
 
 
