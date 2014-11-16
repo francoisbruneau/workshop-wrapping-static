@@ -15,6 +15,7 @@ function GetURLParameter(sParam){
 jQuery(document).ready(function (){
 	var hasRegistered = GetURLParameter('thank_you');
 	if (hasRegistered == 1) {
-		jQuery("a.btn-primary").html("Merci !");
+		jQuery(".sign-up-shortcut").hide();
+		jQuery(".thank-you-message").css('display', 'inline-block');
 	}
 });
