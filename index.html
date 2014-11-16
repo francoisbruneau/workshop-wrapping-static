@@ -39,8 +39,8 @@
             <h1>Gift wrap workshop</h1>
             <p>(emballage de paquets cadeaux)</p>
             <div class="details hidden-xs">
-              <p>au Café de la Couronne d’Or, Le 15 décembre 2014, 13h-16h</p >
-              <p><a class="btn btn-primary btn-lg" role="button">Inscription &raquo;</a></p>
+              <p>au Café de la Couronne d’Or, le 15 décembre 2014, 13h-16h</p >
+              <p><a class="btn btn-primary btn-lg" role="button" href="#sign-up-form">Inscription &raquo;</a></p>
             </div>
           </div>
         </div>
@@ -82,7 +82,37 @@
 
       <hr>
 
+
+
     <div class="container">
+
+
+    <h2 id="sign-up-form">Inscription</h2>
+      <form action="http://getsimpleform.com/messages?form_api_token=367cc45092eaa039c8aa4a3a34d1243f" method="post">
+
+      <input type='hidden' name='redirect_to' value='http://workshop-wrapping.ch?thank_you=1' />
+    
+        <div class="form-group">
+            <label for="inputName">Nom</label>
+            <input name="name" type="name" class="form-control" id="inputName" placeholder="Entrez vos nom et prénom" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="inputEmail">Adresse e-mail</label>
+            <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Entrez votre adresse e-mail" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="exampleTextArea">Message</label>
+            <textarea name="message" class="form-control" rows="3" required></textarea>    
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Je m'inscris !</button>
+
+    </form>
+
+<hr>
+
       <footer>
         <p>&copy; Laura Teodori & Lucie Ryser 2014</p>
       </footer>
