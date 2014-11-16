@@ -4,7 +4,15 @@
    Author's custom styles
    ========================================================================== */
 
+.call-to-action {
+	position: relative;
+}
 
+.wrapper-cta {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
 
 
 
