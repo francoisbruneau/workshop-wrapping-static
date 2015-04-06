@@ -4,6 +4,10 @@
    Author's custom styles
    ========================================================================== */
 
+.sign-up-button {
+	margin-top: 1em;
+}
+
 .call-to-action {
 	position: relative;
 }
@@ -33,27 +37,13 @@
 }
 
 p {
-	font-family: 'Roboto', sans-serif; 
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-style: italic;
 }
 
 h1, h2, h3, h4, label, input, textarea, .btn-primary {
-	font-family: 'Roboto', sans-serif; 
+	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	font-style: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
