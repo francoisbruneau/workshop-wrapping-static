@@ -23,10 +23,31 @@
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link href='http://fonts.googleapis.com/css?family=Roboto:500,300italic' rel='stylesheet' type='text/css'>
       <style>
-          body {
-              padding-top: 0px;
-              padding-bottom: 20px;
-          }
+        body {
+            padding-top: 0px;
+            padding-bottom: 20px;
+        }
+
+        .embed-container {
+          position: relative;
+          margin-bottom: 2em;
+          height: 0;
+          overflow: hidden;
+          max-width: 100%;
+          height: auto;
+        }
+
+        .embed-container.video {
+          padding-bottom: 56.25%;
+        }
+
+        iframe, object, embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
       </style>
       <link rel="stylesheet" href="css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/main.css">
@@ -39,36 +60,22 @@
       <![endif]-->
 
       <div class="call-to-action">
-        <div class="container visible-xs header-text">
-          <h1>gift wrap workshop</h1>
-          <p>(emballage de paquets cadeaux)</p>
-          <p>à la <a target="_blank" href="https://www.facebook.com/pages/Saladerie-ium/1485241438386443?fref=ts">saladerie ...{ium}</a> à Lausanne</p>
-          <p>Le 2 mai 2015, 9h-11h</p>
-          <p><a class="btn btn-primary btn-lg sign-up-button" role="button" href="#sign-up-form">Inscription &raquo;</a></p>
-          <h2 class="thank-you-message">Merci !</h2>
-        </div>
-
-        <div class="container">
-          <img class="img-responsive" src="img/workshop-wrapping.jpg"/>
-        </div>
-
-        <div class="row wrapper-cta">
-          <div class="col-md-12 header-text hidden-xs">
+        <div class="row">
+          <div class="col-md-12 header-text">
             <h1>gift wrap workshop</h1>
             <p>(emballage de paquets cadeaux)</p>
-            <div class="hidden-xs">
-              <p>à la <a target="_blank" href="https://www.facebook.com/pages/Saladerie-ium/1485241438386443?fref=ts">saladerie ...{ium}</a> à Lausanne, le 2 mai 2015, 9h-11h</p >
-              <p><a class="btn btn-primary btn-lg sign-up-button" role="button" href="#sign-up-form">Inscription &raquo;</a></p>
-              <h2 class="thank-you-message">Merci !</h2>
+            <div class="embed-container video" style="margin-top: 1em; margin-bottom: 1em;">
+                <iframe src='https://player.vimeo.com/video/189816104?title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
             </div>
+            <p><a class="btn btn-primary btn-lg sign-up-button" role="button" href="#form">Nous contacter &raquo;</a></p>
+            <h2 class="thank-you-message">Merci !</h2>
+
           </div>
         </div>
       </div>
 
       <div class="container" style="padding-top: 1em; padding-bottom: 2em;">
         <h2>Beaux papiers, gift tags, rubans, pliages... </h2>
-        <p>Le DIY sera à l’honneur lors de cette chaleureuse matinée. En cette période bucolique, joignez l’utile à l’agréable en notre compagnie ! <br/> Une occasion se prépare (anniversaire, mariage, naissance...) ? Prenez vos cadeaux avec vous ! Si ce n'est pas le cas, pas de souci. Nous vous fournirons de quoi vous faire la main.</p>
-        <p>40.- (cash sur place), matériel compris</p>
       </div>
 
       <div class="container">
@@ -109,7 +116,7 @@
       <hr>
 
     <div class="container">
-      <h2 id="sign-up-form">Inscription et renseignements</h2>
+      <h2 id="form">Renseignements</h2>
       <form action="http://getsimpleform.com/messages?form_api_token=367cc45092eaa039c8aa4a3a34d1243f" method="post">
         <input type='hidden' name='redirect_to' value='http://gift-wrap-workshop.ch?thank_you=1' />
         <div class="row">
@@ -137,7 +144,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Laura Teodori & Lucie Ryser 2015</p>
+        <p>&copy; Laura Teodori & Lucie Ryser 2016</p>
       </footer>
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
